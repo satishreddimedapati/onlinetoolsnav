@@ -1,0 +1,241 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Light Theme */
+  .light-theme {
+    background: linear-gradient(to right, #e0f7fa, #fff);
+    color: #333;
+  }
+  
+  .light-theme .header {
+    background-color: #00bcd4;
+    border-bottom: 5px solid #00796b;
+  }
+  
+  .light-theme .filter-container {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .light-theme .website-card {
+    background-color: #fff;
+    border: 2px solid #00bcd4;
+    color: #333;
+  }
+  
+  .light-theme .website-card h2 a {
+    color: #00bcd4;
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    background: linear-gradient(to right, #212121, #424242);
+    color: white;
+  }
+  
+  .dark-theme .header {
+    background-color: #1c313a;
+    border-bottom: 5px solid #00bcd4;
+  }
+  
+  .dark-theme .filter-container {
+    background-color: #333;
+    color: white;
+  }
+  
+  .dark-theme .website-card {
+    background-color: #424242;
+    border: 2px solid #00bcd4;
+    color: white;
+  }
+  
+  .dark-theme .website-card h2 a {
+    color: #00bcd4;
+  }
+  
+  /* Bright Theme */
+  .bright-theme {
+    background: linear-gradient(to right, #ffeb3b, #fbc02d);
+    color: #000;
+  }
+  
+  .bright-theme .header {
+    background-color: #ffeb3b;
+    border-bottom: 5px solid #f57f17;
+  }
+  
+  .bright-theme .filter-container {
+    background-color: #fff3e0;
+    color: #000;
+  }
+  
+  .bright-theme .website-card {
+    background-color: #fff9c4;
+    border: 2px solid #f57f17;
+    color: #000;
+  }
+  
+  .bright-theme .website-card h2 a {
+    color: #f57f17;
+  }
+  
+  /* Ocean Theme */
+  .ocean-theme {
+    background: linear-gradient(to right, #0288d1, #01579b);
+    color: white;
+  }
+  
+  .ocean-theme .header {
+    background-color: #0288d1;
+    border-bottom: 5px solid #01579b;
+  }
+  
+  .ocean-theme .filter-container {
+    background-color: #b3e5fc;
+    color: #01579b;
+  }
+  
+  .ocean-theme .website-card {
+    background-color: #81d4fa;
+    border: 2px solid #0288d1;
+    color: #01579b;
+  }
+  
+  .ocean-theme .website-card h2 a {
+    color: #0288d1;
+  }
+  
+  /* Midnight Theme */
+  .midnight-theme {
+    background: linear-gradient(to right, #263238, #37474f);
+    color: #fff;
+  }
+  
+  .midnight-theme .header {
+    background-color: #263238;
+    border-bottom: 5px solid #455a64;
+  }
+  
+  .midnight-theme .filter-container {
+    background-color: #455a64;
+    color: #fff;
+  }
+  
+  .midnight-theme .website-card {
+    background-color: #37474f;
+    border: 2px solid #455a64;
+    color: #fff;
+  }
+  
+  .midnight-theme .website-card h2 a {
+    color: #00bcd4;
+  }
+  
+  /* Filter Container */
+  .filter-container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .filter-container label {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .filter-container input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 320px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-container input:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+  }
+  
+  /* Website Cards */
+  .website-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .website-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .website-card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .website-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .website-card a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .website-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation Effect */
+  @keyframes circulation {
+    0% {
+      transform: scale(1);
+      border-color: #00bcd4;
+    }
+    50% {
+      transform: scale(1.05);
+      border-color: #ff4081;
+    }
+    100% {
+      transform: scale(1);
+      border-color: #00bcd4;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .website-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .website-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .filter-container {
+      margin: 10px;
+    }
+  }
+  
